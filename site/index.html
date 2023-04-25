@@ -17,10 +17,34 @@
             height: 100px;
             object-fit: contain;
         }
+
+        /* Default (Light) Theme */
+        .theme {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .theme a {
+            color: #007bff;
+        }
+
+        /* Dark Theme */
+        @media (prefers-color-scheme: dark) {
+            .theme {
+                background-color: #333333;
+                color: #ffffff;
+            }
+
+            .theme a {
+                color: #00a8ff;
+            }
+
+            /* Update other elements' colors if needed */
+        }
     </style>
 </head>
 
-<body>
+<body class="theme">
     <!-- Header -->
     <header class="bg-primary text-white text-center py-5">
         <h1>Search Minutes</h1>
@@ -216,19 +240,22 @@
                     <img src="img/me.jpeg" alt="Team Member 1 Photo" class="img-fluid rounded-circle"
                         style="max-width: 150px;">
                     <h3>Lionel Robert</h3>
-                    <p>UX designer, Frontend developer. Focused on developing front-end logic, building alert management page and adding alerts using React.</p>
+                    <p>UX designer, Frontend developer. Focused on developing front-end logic, building alert management
+                        page and adding alerts using React.</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="img/mrthorpe.jpg" alt="Maxwell Thorpe Photo" class="img-fluid rounded-circle"
                         style="max-width: 150px;">
                     <h3>Maxwell Thorpe</h3>
-                    <p>Product owner. Assisted with backend tasks (Django) and database configuration. Co-led sprint reviews with Scrum master.</p>
+                    <p>Product owner. Assisted with backend tasks (Django) and database configuration. Co-led sprint
+                        reviews with Scrum master.</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="img/chris-lebioda-plane.jpg" alt="Chris Lebioda Photo" class="img-fluid rounded-circle"
                         style="max-width: 150px;">
                     <h3>Chris Lebioda</h3>
-                    <p>Scrum master, part-time Product Owner, QA, Heroku Learner. Focused on designing and sending emails to users and fixing bugs.</p>
+                    <p>Scrum master, part-time Product Owner, QA, Heroku Learner. Focused on designing and sending
+                        emails to users and fixing bugs.</p>
                 </div>
             </div>
             <div class="row">
@@ -236,20 +263,24 @@
                     <img src="img/avater.jpg" alt="Team Member 4 Photo" class="img-fluid rounded-circle"
                         style="max-width: 150px;">
                     <h3>Xinyue Chen</h3>
-                    <p>Developer: Responsible for the database configuration, and Django backend developemnt. Assisted with the story about the profile page in the front end. </p>
+                    <p>Developer: Responsible for the database configuration, and Django backend developemnt. Assisted
+                        with the story about the profile page in the front end. </p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="img/julie-zhang.jpeg" alt="Team Member 5 Photo" class="img-fluid rounded-circle"
                         style="max-width: 150px;">
                     <h3>Jiashu (Julie) Zhang</h3>
-                    <p>Developer. Focused on user experience improvements on the search page, including restructions on the searching area and the launching of the detail page for each individual result. 
+                    <p>Developer. Focused on user experience improvements on the search page, including restructions on
+                        the searching area and the launching of the detail page for each individual result.
                         In addition, assisted in prototyping Notification page for alert and profile management.</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="img/cheryl-wu.png" alt="Team Member 6 Photo" class="img-fluid rounded-circle"
                         style="max-width: 150px;">
                     <h3>Xiaoyan(Cheryl) Wu</h3>
-                    <p>UX designer, Frontend developer. Focused on designing the UX workflow, building profile and alert management page and adding alerts feature on the frontend, implementing the overall UI style.</p>
+                    <p>UX designer, Frontend developer. Focused on designing the UX workflow, building profile and alert
+                        management page and adding alerts feature on the frontend, implementing the overall UI style.
+                    </p>
                 </div>
             </div>
         </div>
