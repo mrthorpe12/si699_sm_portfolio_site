@@ -28,6 +28,11 @@
             color: #007bff;
         }
 
+        /* Default (Light) Theme */
+        .theme .icon {
+            filter: none;
+        }
+
         /* Dark Theme */
         @media (prefers-color-scheme: dark) {
             .theme {
@@ -40,7 +45,11 @@
             }
 
             /* Update other elements' colors if needed */
+            .theme .icon {
+                filter: invert(1) brightness(2);
+              }
         }
+  
     </style>
 </head>
 
@@ -81,20 +90,20 @@
             <div class="row">
                 <!-- Replace with actual features and icons -->
                 <div class="col-md-4">
-                    <img src="img/email.png" alt="Feature Icon" class="img-fluid tech-logo" />
+                    <img src="img/email.png" alt="Feature Icon" class="img-fluid tech-logo icon" />
                     <h3>Email Alerts</h3>
                     <p>Users will receive email alerts whenever a story containing one or more user-specified keywords
                         is uploaded. Each alert will contain an embedded video or a video link, as well as a summary of
                         the story contents.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="img/dashboard.png" alt="Feature Icon" class="img-fluid tech-logo" />
+                    <img src="img/dashboard.png" alt="Feature Icon" class="img-fluid tech-logo icon" />
                     <h3>Alert Dashboard</h3>
                     <p>Users can access a personalized dashboard where they can create, update, and delete their
                         personalized alerts.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="img/loupe.png" alt="Feature Icon" class="img-fluid tech-logo" />
+                    <img src="img/loupe.png" alt="Feature Icon" class="img-fluid tech-logo icon" />
                     <h3>Additional search features</h3>
                     <p>Users can select multiple state and locality values. Users can also specify as many search terms
                         as they would like. Alerts can be created independently of running searches.</p>
@@ -124,7 +133,7 @@
                         style="max-width: 100px;">
                 </div>
                 <div class="col-md-3 text-center">
-                    <img src="img/nodejs_logo.png" alt="Node.js Logo" class="img-fluid tech-logo"
+                    <img src="img/nodejs_logo.png" alt="Node.js Logo" class="img-fluid tech-logo icon"
                         style="max-width: 100px;">
                 </div>
             </div>
